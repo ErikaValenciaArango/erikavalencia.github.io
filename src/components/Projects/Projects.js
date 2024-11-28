@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import colony from "../../Assets/Projects/colony.jpeg";
+import editor from "../../Assets/Projects/agroahp.png";
+import huellas from "../../Assets/Projects/huellas.png";
+import agro from "../../Assets/Projects/agroahp.png";
+import forlife from "../../Assets/Projects/forlife.png";
 
 function Projects() {
   return (
@@ -15,31 +14,33 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={huellas}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Entre huellas y recuerdos"
+              description="Entre huellas y recuerdos es un juego narrativo y de exploración donde acompañas a un niño en un emotivo viaje a través de sus recuerdos para encontrar a su perro perdido. A medida que avanzas por los niveles, el protagonista deberá enfrentarse a diferentes enemigos y esquivar obstáculos que le permitan desbloquear fragmentos de sus recuerdos. Estos fragmentos lo acercan un paso más a comprender lo que ocurrió y por qué su fiel compañero desapareció. 
+              Tu objetivo final es reunir todos los recuerdos necesarios para descubrir dónde se encuentra el perro y traer de vuelta a ese amigo inseparable que tanto anhela. ¿Podrás ayudar al protagonista a superar las sombras de sus propios recuerdos y encontrar la paz que tanto necesita?"
+              ghLink="https://github.com/ErikaValenciaArango/GenEquipo6"
+              demoLink="https://crimson-videogames.itch.io/entre-huellas-y-recuerdos"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={forlife}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="For Life"
+              description="One night, an ordinary pumpkin in a yard receives a mysterious drop of green substance, and instantly, it begins to grow enormously. Rolling out of the house, it invades the streets of the neighborhood, and soon becomes an unstoppable mass that crushes everything in its path. Just at that moment, a boy named Tomás, who was returning from a friend's house, accidentally crosses his path.
+              The pumpkin, as if it had a life of its own, changes course and begins to follow Tomás. The boy runs desperately, zigzagging through the streets while the enormous pumpkin rolls behind him, getting faster and bigger. The neighbors watch in horror from their windows, while Tomás frantically looks for a place to hide."
+              ghLink="https://github.com/SabasRocha/GameJam2"
+              demoLink="https://ana-vg.itch.io/for-life"
             />
           </Col>
 
@@ -47,7 +48,7 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
+              title=""
               description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
@@ -56,35 +57,22 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={colony}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Colony defender"
+              description="Colony Defender is a game where the player controls a spaceship to defend the human colony of New Gaia from waves of alien enemies and mercenaries. The goal is to destroy the enemies before they invade the colony, upgrading the ship with weapons and abilities as the game progresses. As the game advances, the waves become more challenging, and the player ultimately faces an alien boss. The defeat of enemies and the successful protection of the colony depend on the player's skill and strategic upgrades."
+              ghLink="https://github.com/ErikaValenciaArango/GameJam3"
+              demoLink="https://crimson-videogames.itch.io/colony-defender"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={agro}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              title="AgroAHP"
+              description="AgroAHP es una aplicación web diseñada para apoyar la toma de decisiones agrícolas, específicamente en la selección de fitosanitarios, utilizando el Proceso Analítico Jerárquico (AHP). Este método permite descomponer decisiones complejas en niveles jerárquicos, lo que facilita la evaluación de diferentes opciones basadas en criterios como costo, impacto ambiental y toxicidad. La aplicación ofrece una interfaz sencilla e intuitiva, permitiendo al usuario ajustar los criterios según las necesidades del agricultor, como la sensibilidad del cultivo, el presupuesto disponible y las regulaciones locales. Además, AgroAHP incluye herramientas visuales como gráficos y reportes que permiten una interpretación clara de los resultados, ayudando a los usuarios a comparar cómo cada fitosanitario se desempeña en relación con los criterios definidos. Con un enfoque en sostenibilidad, la aplicación fomenta decisiones que minimicen el impacto ambiental y promuevan la salud del ecosistema. También cuenta con una base de datos actualizada sobre fitosanitarios, que el usuario puede consultar y modificar según las necesidades locales."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
