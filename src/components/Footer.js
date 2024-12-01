@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillGithub
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import itch from "C:/Users/User/Documents/GitHub/erikavalencia.github.io/src/Assets/itch-io.png"; 
 
 function Footer() {
   let date = new Date();
@@ -35,16 +34,24 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+              {/* itch.io */}
+              <li className="social-icons">
+                <a
+                  href="https://crimson-videogames.itch.io/" // Reemplaza con tu página en itch.io
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                  <img
+                    src={itch}
+                    alt="Itch.io"
+                    style={{
+                      width: "30px", // Ajusta el tamaño de la imagen
+                      height: "30px",
+                      borderRadius: "5px", // Si deseas bordes redondeados
+                    }}
+                  />
+                </a>
+              </li>
           </ul>
         </Col>
       </Row>

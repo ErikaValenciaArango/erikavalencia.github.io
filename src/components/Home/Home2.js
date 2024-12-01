@@ -2,11 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/Avatarr.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import itchB from "../../Assets/itch-io-morado.png"; 
 
 function Home2() {
   return (
@@ -18,12 +16,12 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            Electronics and Telecommunications Engineer, focused on video game development and web 
-            applications, with knowledge in C#, 3D modeling, user interface design, HTML, CSS, JavaScript, 
-            Python, and MongoDB. I stand out for my effective communication skills, teamwork, problem-solving 
-            abilities, and commitment to continuous improvement and the exploration of new technologies, 
-            enabling me to contribute efficiently to collaborative and innovative projects.
-                <b className="purple"></b>
+              Electronics and Telecommunications Engineer, focused on video game development and web
+              applications, with knowledge in C#, 3D modeling, user interface design, HTML, CSS, JavaScript,
+              Python, and MongoDB. I stand out for my effective communication skills, teamwork, problem-solving
+              abilities, and commitment to continuous improvement and the exploration of new technologies,
+              enabling me to contribute efficiently to collaborative and innovative projects.
+              <b className="purple"></b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -40,6 +38,7 @@ function Home2() {
             </p>
             <p><span className="purple">erikavalenciaarango@gmail.com</span></p>
             <ul className="home-about-social-links">
+              {/* GitHub */}
               <li className="social-icons">
                 <a
                   href="https://github.com/ErikaValenciaArango"
@@ -50,6 +49,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+              {/* LinkedIn */}
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/erika-valencia-arango/"
@@ -60,14 +60,23 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
+              {/* itch.io */}
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://crimson-videogames.itch.io/" // Reemplaza con tu página en itch.io
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <img
+                    src={itchB}
+                    alt="Itch.io"
+                    style={{
+                      width: "30px", // Ajusta el tamaño de la imagen
+                      height: "30px",
+                      borderRadius: "5px", // Si deseas bordes redondeados
+                    }}
+                  />
                 </a>
               </li>
             </ul>
@@ -77,4 +86,6 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
+
