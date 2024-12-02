@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import CardComponent from "./Skills"; 
 
 function About() {
   return (
@@ -34,6 +35,9 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+
+        <CardComponent />
+
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
@@ -45,6 +49,11 @@ function About() {
         </h1>
         <Toolstack />
 
+        {/* Agrega las tarjetas aquí */}
+        <h1 className="project-heading">
+          My <strong className="purple">Experience</strong>
+        </h1>
+
         <Github />
       </Container>
     </Container>
@@ -52,3 +61,4 @@ function About() {
 }
 
 export default About;
+

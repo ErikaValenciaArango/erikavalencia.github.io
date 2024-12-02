@@ -1,0 +1,14 @@
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    padding: 20px;
+  }
+  .card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4b005d; /* Línea debajo del título */
+    padding-bottom: 5px;
+  }
+  
