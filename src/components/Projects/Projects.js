@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import colony from "../../Assets/Projects/colony.jpeg";
-import editor from "../../Assets/Projects/agroahp.png";
+import sotano from "../../Assets/Projects/sotano.jpeg";
 import huellas from "../../Assets/Projects/huellas.png";
 import agro from "../../Assets/Projects/agroahp.png";
 import forlife from "../../Assets/Projects/forlife.png";
@@ -24,9 +24,9 @@ function Projects() {
             <ProjectCard
               imgPath={huellas}
               isBlog={false}
-              title="Entre huellas y recuerdos"
-              description="Entre huellas y recuerdos es un juego narrativo y de exploración donde acompañas a un niño en un emotivo viaje a través de sus recuerdos para encontrar a su perro perdido. A medida que avanzas por los niveles, el protagonista deberá enfrentarse a diferentes enemigos y esquivar obstáculos que le permitan desbloquear fragmentos de sus recuerdos. Estos fragmentos lo acercan un paso más a comprender lo que ocurrió y por qué su fiel compañero desapareció. 
-              Tu objetivo final es reunir todos los recuerdos necesarios para descubrir dónde se encuentra el perro y traer de vuelta a ese amigo inseparable que tanto anhela. ¿Podrás ayudar al protagonista a superar las sombras de sus propios recuerdos y encontrar la paz que tanto necesita?"
+              title="Between Footprints and Memories"
+              description="Between Footprints and Memories is a narrative exploration game where you accompany a young boy on an emotional journey through his memories to find his lost dog. As you progress through the levels, the protagonist must face various enemies and overcome obstacles to unlock fragments of his memories. These fragments bring him one step closer to understanding what happened and why his loyal companion disappeared.
+              Your ultimate goal is to gather all the necessary memories to discover the dog’s whereabouts and reunite with the inseparable friend he longs for. Can you help the protagonist overcome the shadows of his own memories and find the peace he so desperately seeks?"
               ghLink="https://github.com/ErikaValenciaArango/GenEquipo6"
               demoLink="https://crimson-videogames.itch.io/entre-huellas-y-recuerdos"
             />
@@ -46,12 +46,13 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={sotano}
               isBlog={false}
-              title=""
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="The basement of L'Angolo"
+              description="In The Basement of L'Angolo, the player wakes up trapped in the basement of a Colombian restaurant infamous for its dark past. Chef Ferruzo, notorious for using human meat in his dishes, has unleashed a zombie invasion through grotesque experiments.
+              The player must escape the restaurant by facing hordes of zombies, solving puzzles, and uncovering dark secrets while fighting for survival. The story is deeply intertwined with Colombian urban legends and historical events, immersing the player in an atmosphere of psychological and cultural horror."
+              ghLink="https://github.com/ErikaValenciaArango/ProyectoFinal"
+              demoLink="https://sylvanasbv.itch.io/elsotanodelangolo"              
             />
           </Col>
 
@@ -71,8 +72,10 @@ function Projects() {
               imgPath={agro}
               isBlog={false}
               title="AgroAHP"
-              description="AgroAHP es una aplicación web diseñada para apoyar la toma de decisiones agrícolas, específicamente en la selección de fitosanitarios, utilizando el Proceso Analítico Jerárquico (AHP). Este método permite descomponer decisiones complejas en niveles jerárquicos, lo que facilita la evaluación de diferentes opciones basadas en criterios como costo, impacto ambiental y toxicidad. La aplicación ofrece una interfaz sencilla e intuitiva, permitiendo al usuario ajustar los criterios según las necesidades del agricultor, como la sensibilidad del cultivo, el presupuesto disponible y las regulaciones locales. Además, AgroAHP incluye herramientas visuales como gráficos y reportes que permiten una interpretación clara de los resultados, ayudando a los usuarios a comparar cómo cada fitosanitario se desempeña en relación con los criterios definidos. Con un enfoque en sostenibilidad, la aplicación fomenta decisiones que minimicen el impacto ambiental y promuevan la salud del ecosistema. También cuenta con una base de datos actualizada sobre fitosanitarios, que el usuario puede consultar y modificar según las necesidades locales."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              description="AgroAHP is a web application designed to support agricultural decision-making, specifically in selecting phytosanitary products, by utilizing the Analytic Hierarchy Process (AHP). This method breaks down complex decisions into hierarchical levels, making it easier to evaluate different options based on criteria such as cost, environmental impact, and toxicity.
+              The application features a simple and intuitive interface, allowing users to adjust criteria according to the farmer’s needs, such as crop sensitivity, available budget, and local regulations. Additionally, AgroAHP includes visual tools like charts and reports for clear result interpretation, enabling users to compare how each phytosanitary product performs against the defined criteria.
+              With a focus on sustainability, the application encourages decisions that minimize environmental impact and promote ecosystem health. It also provides an up-to-date database of phytosanitary products, which users can consult and modify to meet local needs."
+              ghLink="https://github.com/ErikaValenciaArango/AgroAHP-front"
             />
           </Col>
         </Row>
